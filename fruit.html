@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jof Fruitshop</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Flipster CSS -->
+<link rel="stylesheet" href="dist/jquery.flipster.min.css">
+
+<!-- Flipster Js -->
+<script src="dist/jquery.flipster.min.js"></script>
+</head>
+<body>
+    <section class="header">
+        <div class="top">
+            <div class="logo"> <img src="images/logo.png" alt=""></div>
+            <div class="nav">
+                <ul>
+                    <li> <a href="index.html">Home </a> </li>
+                    <li> <a href="about.html">About Us </a> </li>
+                    <li> <a href="fruit.html">Fruits </a> </li>
+                    <li> <a href="ourlocation.html">Contact Us </a> </li>
+                </ul>
+            </div>
+        </div>
+    <div id="carousel">
+        <ul class="flip-items">
+            <li >
+                <img src="images/f1.png">
+                <div class="full ">
+                        <h3 class="white_font">Black Grapes<br><strong class="theme_blue">Fresh Fruit</strong></h3>
+                </div>
+            </li>
+            <li>
+                <img src="images/f2.png">
+                <div class="full ">
+                        <h3 class="white_font">Pineapple<br><strong class="theme_blue">Fresh Fruit</strong></h3>
+                </div>
+            </li>
+            <li >
+                <img src="images/f3.png">
+                <div class="full ">
+                        <h3 class="white_font">Bananas<br><strong class="theme_blue">Fresh Fruit</strong></h3>
+                </div>
+            </li>  <li >
+                <img src="images/about_img.png">
+                <div class="full ">
+                        <h3 class="white_font">Apple<br><strong class="theme_blue">Fresh Fruit</strong></h3>
+                </div>
+            </li>   
+            </li>  <li >
+                <img src="images/blog3.png">
+                <div class="full ">
+                        <h3 class="white_font">Green Apple<br><strong class="theme_blue">Fresh Fruit</strong></h3>
+                </div>
+            </li> 
+            </li>
+            <li >
+                <img src="images/f_b1.png">
+                <div class="full ">
+                        <h3 class="white_font">Lemon<br><strong class="theme_blue">Fresh Fruit</strong></h3>
+                </div>
+            </li>
+             <li >
+                <img src="images/fruit_img.png">
+                <div class="full ">
+                        <h3 class="white_font">Many<br><strong class="theme_blue">Fresh Fruit</strong></h3>
+                </div>
+            </li> 
+        </ul> 
+    </div>
+        
+    </section>
+</body>
+<script>
+    $(document).ready(function(){
+$("#carousel").flipster({
+        style: 'carousel',
+        spacing: -0.5,
+        nav: true,
+        buttons:   true,
+   });
+});
+</script>
+</html>
